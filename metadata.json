@@ -1,0 +1,5 @@
+{
+  "name": "Sentix Dashboard",
+  "description": "An enterprise-grade interactive sentiment analysis dashboard for real-time text evaluation and batch processing of customer feedback, reviews, and social media content.",
+  "requestFramePermissions": []
+}
