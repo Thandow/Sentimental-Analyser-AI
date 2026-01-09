@@ -2,16 +2,16 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AnalysisResult, Sentiment } from "../types";
 
-const GEMINI_API_KEY = "AIzaSyDsGZJUmZ80cxbcxxt6h46Chy5fkCATMaU";
+const API_KEY = "AIzaSyDsGZJUmZ80cxbcxxt6h46Chy5fkCATMaU";
 
 export class GeminiService {
   private ai: GoogleGenAI;
 
   constructor() {
-    if (!GEMINI_API_KEY) {
+    if (!API_KEY) {
       throw new Error("API Key is missing");
     }
-    this.ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+    this.ai = new GoogleGenAI({ apiKey: API_KEY });
   }
 
   async analyzeBatch(texts: string[]): Promise<AnalysisResult[]> {
